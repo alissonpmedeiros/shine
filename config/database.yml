@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  
+
+development:
+  <<: *default
+  database: shine_development
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: alisson
+  password: kanibaiz
+
+test:
+  <<: *default
+  database: shine_test
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: alisson
+  password: kanibaiz
+
+
